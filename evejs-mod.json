@@ -1,0 +1,50 @@
+{
+  "author": {
+    "id": "au-mvgf59rqpaue",
+    "keyId": "6d218baa968e",
+    "name": "普罗旺斯煎饼果子"
+  },
+  "category": "玩法",
+  "changelog": "",
+  "conflicts": [],
+  "delisted": false,
+  "description": "达到对应高级技能 IV 后，用 /isl m、/isl s、/isl r 分别开启制造、科研、反应的 99 条生产线，再输入一次即可关闭；/isl 查看状态，/isl all 三类一起开关，/isl help 查看用法。未开启时保持原版上限，开启状态跨重启保留。",
+  "displayName": "更方便的科研与制造",
+  "downloadUrls": [
+    {
+      "mirror": "github",
+      "priority": 1,
+      "url": "https://github.com/jealous123456789/evejs-mod-industry-job-slots/releases/download/v1.0.0/industry-job-slots-1.0.0.zip"
+    }
+  ],
+  "evejsVersions": [
+    "261108.x"
+  ],
+  "featured": false,
+  "highlights": [],
+  "history": [],
+  "id": "industry-job-slots",
+  "publishedAt": "2026-11-12",
+  "readme": [
+    "进入游戏后输入 `/isl` 查看三类状态和当前技能等级。对应高级技能到 IV 后：",
+    "```\n/isl m      制造开 / 关\n/isl s      科研开 / 关\n/isl r      反应开 / 关\n/isl all    三类一起开 / 关\n```",
+    "再输入一次同样的命令即可关闭。",
+    "需要强制开启或关闭时：",
+    "```\n/isl on m       只开制造\n/isl off m      只关制造\n/isl help       显示帮助\n```",
+    "**请使用英文命令。** 当前客户端在发送中文斜杠命令时会编码报错，中文命令名不可用。",
+    "也可以写 `/lines` 或 `/industryslots`。",
+    "- 只调整生产线数量，不改任务时长、费用、材料和成功率。\n- 一个蓝图同一时间仍然只能装在一个任务里，99 条需要足够的蓝图。\n- 实际槽位立即生效；工业窗口顶部的“X / 上限”是客户端缓存，可能仍显示原版数字，不影响安装。"
+  ],
+  "repo": "https://github.com/jealous123456789/evejs-mod-industry-job-slots",
+  "requiresRestart": true,
+  "sha256": "56ccf391b9206753c7cd323f9797248a8e140f18ee2357bd4c747d20158d7576",
+  "sizeBytes": 23773,
+  "tags": [
+    "工业",
+    "制造",
+    "科研",
+    "反应",
+    "槽位"
+  ],
+  "version": "1.0.0"
+}
