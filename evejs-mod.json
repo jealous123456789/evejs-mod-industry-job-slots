@@ -5,7 +5,7 @@
     "name": "普罗旺斯煎饼果子"
   },
   "category": "玩法",
-  "changelog": "",
+  "changelog": "更新了一次完成当前的可研/工业/反应任务，支持分别完成。注意完成情况在本地聊天反馈。",
   "conflicts": [],
   "delisted": false,
   "description": "达到对应高级技能 IV 后，用 /isl m、/isl s、/isl r 分别开启制造、科研、反应的 99 条生产线，再输入一次即可关闭；/isl 查看状态，/isl all 三类一起开关，/isl help 查看用法。未开启时保持原版上限，开启状态跨重启保留。",
@@ -14,31 +14,34 @@
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/jealous123456789/evejs-mod-industry-job-slots/releases/download/v1.0.0/industry-job-slots-1.0.0.zip"
+      "url": "https://github.com/jealous123456789/evejs-mod-industry-job-slots/releases/download/v1.0.1/industry-job-slots-1.0.1.zip"
     }
   ],
   "evejsVersions": [
     "261108.x"
   ],
   "featured": false,
-  "highlights": [],
+  "highlights": [
+    "三类生产线各 99 条，互不占用",
+    "门槛为对应高级技能 IV",
+    "一键完成全部工业任务",
+    "可只完成制造、科研或反应",
+    "失败逐条提示，开启状态跨重启保留"
+  ],
   "history": [],
   "id": "industry-job-slots",
-  "publishedAt": "2026-11-12",
+  "publishedAt": "2026-11-13",
   "readme": [
-    "进入游戏后输入 `/isl` 查看三类状态和当前技能等级。对应高级技能到 IV 后：",
-    "```\n/isl m      制造开 / 关\n/isl s      科研开 / 关\n/isl r      反应开 / 关\n/isl all    三类一起开 / 关\n```",
-    "再输入一次同样的命令即可关闭。",
-    "需要强制开启或关闭时：",
-    "```\n/isl on m       只开制造\n/isl off m      只关制造\n/isl help       显示帮助\n```",
-    "**请使用英文命令。** 当前客户端在发送中文斜杠命令时会编码报错，中文命令名不可用。",
-    "也可以写 `/lines` 或 `/industryslots`。",
-    "- 只调整生产线数量，不改任务时长、费用、材料和成功率。\n- 一个蓝图同一时间仍然只能装在一个任务里，99 条需要足够的蓝图。\n- 实际槽位立即生效；工业窗口顶部的“X / 上限”是客户端缓存，可能仍显示原版数字，不影响安装。"
+    "制造、科研、反应达到高级批量生产 IV、高级实验室操作 IV、高级批量反应 IV 后，用 `/isl m`、`/isl s`、`/isl r` 分别开启 99 条生产线；未开启时保持原版上限。",
+    "`/isl done` 会跳过剩余时间，立即交付当前全部科研、制造、反应任务，正常发放产物、归还蓝图、释放槽位；`/isl done m`、`/isl done s`、`/isl done r` 只完成对应类别。某一条失败不影响其他任务，原因逐条提示；不会补材料或游戏币，交付后不能撤回。",
+    "```\n/isl              查看状态\n/isl m / s / r    制造 / 科研 / 反应开或关\n/isl all          三类一起开或关\n/isl done         完成全部任务\n/isl done m|s|r   只完成一类\n/isl help         帮助\n```",
+    "再输入一次同样的命令即可关闭。也可以写 `/lines` 或 `/industryslots`。",
+    "**请使用英文命令。** 当前客户端在发送中文斜杠命令时会编码报错，中文命令名不可用。"
   ],
   "repo": "https://github.com/jealous123456789/evejs-mod-industry-job-slots",
   "requiresRestart": true,
-  "sha256": "56ccf391b9206753c7cd323f9797248a8e140f18ee2357bd4c747d20158d7576",
-  "sizeBytes": 23773,
+  "sha256": "ed4c1f61b540b0ed9fa79069cc2be411ff0d862aa5cef6aba2d6ae33c3dccaa3",
+  "sizeBytes": 30930,
   "tags": [
     "工业",
     "制造",
@@ -46,5 +49,5 @@
     "反应",
     "槽位"
   ],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
