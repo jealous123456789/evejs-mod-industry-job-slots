@@ -5,7 +5,7 @@
     "name": "普罗旺斯煎饼果子"
   },
   "category": "玩法",
-  "changelog": "更新了一次完成当前的可研/工业/反应任务，支持分别完成。注意完成情况在本地聊天反馈。",
+  "changelog": "适配261115.2服务端",
   "conflicts": [],
   "delisted": false,
   "description": "达到对应高级技能 IV 后，用 /isl m、/isl s、/isl r 分别开启制造、科研、反应的 99 条生产线，再输入一次即可关闭；/isl 查看状态，/isl all 三类一起开关，/isl help 查看用法。未开启时保持原版上限，开启状态跨重启保留。",
@@ -14,11 +14,12 @@
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/jealous123456789/evejs-mod-industry-job-slots/releases/download/v1.0.1/industry-job-slots-1.0.1.zip"
+      "url": "https://github.com/jealous123456789/evejs-mod-industry-job-slots/releases/download/v1.0.2/industry-job-slots-1.0.2.zip"
     }
   ],
   "evejsVersions": [
-    "261108.x"
+    "261108.x",
+    "261115.x"
   ],
   "featured": false,
   "highlights": [
@@ -30,7 +31,7 @@
   ],
   "history": [],
   "id": "industry-job-slots",
-  "publishedAt": "2026-11-13",
+  "publishedAt": "2026-11-17",
   "readme": [
     "制造、科研、反应达到高级批量生产 IV、高级实验室操作 IV、高级批量反应 IV 后，用 `/isl m`、`/isl s`、`/isl r` 分别开启 99 条生产线；未开启时保持原版上限。",
     "`/isl done` 会跳过剩余时间，立即交付当前全部科研、制造、反应任务，正常发放产物、归还蓝图、释放槽位；`/isl done m`、`/isl done s`、`/isl done r` 只完成对应类别。某一条失败不影响其他任务，原因逐条提示；不会补材料或游戏币，交付后不能撤回。",
@@ -40,8 +41,8 @@
   ],
   "repo": "https://github.com/jealous123456789/evejs-mod-industry-job-slots",
   "requiresRestart": true,
-  "sha256": "ed4c1f61b540b0ed9fa79069cc2be411ff0d862aa5cef6aba2d6ae33c3dccaa3",
-  "sizeBytes": 30930,
+  "sha256": "4d2e71785ada7af8533c31a5e1a591a431ff11469fff6f930ad6690ca6c09e81",
+  "sizeBytes": 33264,
   "tags": [
     "工业",
     "制造",
@@ -49,5 +50,5 @@
     "反应",
     "槽位"
   ],
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
